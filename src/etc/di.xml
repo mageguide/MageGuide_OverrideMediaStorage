@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Magento\MediaStorage\Console\Command\ImagesResizeCommand" type="MageGuide\OverrideMediaStorage\Console\Command\ImagesResizeCommandOverride"/>
+	<preference for="Magento\MediaStorage\Service\ImageResize" type="MageGuide\OverrideMediaStorage\Service\ImageResizeOverride"/>
+	<preference for="Magento\Catalog\Model\ResourceModel\Product\Image" type="MageGuide\OverrideMediaStorage\Model\ResourceModel\Product\ImageOverride"/>
+</config>
